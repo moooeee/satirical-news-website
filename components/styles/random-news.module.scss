@@ -1,0 +1,31 @@
+.container {
+  // padding: 6px 0;
+  padding: var(--padding-sm) 0;
+  // background-color: #eee;
+  // background-color: #aaa;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 20px;
+  position: relative;
+  min-height: 21px;
+
+  h3 {
+    // padding: 0 10px;
+    padding: 0 var(--padding-md);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #eee;
+    height: 100%;
+    text-align: center;
+    color: #000000bb;
+    // font-size: 18px;
+    font-size: var(--font-size-sm);
+    border-left: 1px solid #000;
+    font-weight: bold;
+  }
+}

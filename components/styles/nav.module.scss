@@ -1,0 +1,63 @@
+.container {
+  // padding: 10px 25px;
+  padding: var(--padding-md) var(--padding-lg);
+  margin: auto;
+  // margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #000000cc;
+  }
+
+  .subBtns {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    font-family: "effra regular";
+
+    button {
+      font-size: 15px;
+      // padding: 8px 18px;
+      padding: var(--padding-sm) var(--padding-md);
+      border-radius: 10px;
+    }
+
+    :first-child {
+      background: none;
+      border: 1px solid black;
+    }
+
+    :nth-child(2) {
+      background: black;
+      color: #e3e3e3;
+      border: 1px solid black;
+    }
+  }
+}
+
+.stickyNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  background-color: #eee;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  z-index: 100;
+  animation: showNav 0.3s ease;
+
+  @keyframes showNav {
+    from {
+      transform: translateY(-100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+}

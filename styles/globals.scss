@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "effra light";
+  src: url("/fonts/effra-light.ttf");
+}
+@font-face {
+  font-family: "effra regular";
+  src: url("/fonts/effra-regular.ttf");
+}
+@font-face {
+  font-family: "effra medium";
+  src: url("/fonts/effra-medium.ttf");
+}
+@font-face {
+  font-family: "effra bold";
+  src: url("/fonts/effra-bold.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "effra regular", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-variant-ligatures: none;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #eee;
+  direction: rtl;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  font-variant-ligatures: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 100;
+  margin: 0;
+}
+
+:root {
+  --font-size-xl: 36px;
+  --font-size-lg: 28px;
+  --font-size-md2: 24px;
+  --font-size-md: 20px;
+  --font-size-sm: 16px;
+  --font-size-xs: 14px;
+
+  --padding-xl: 26px;
+  --padding-lg: 20px;
+  --padding-md: 10px;
+  --padding-sm: 6px;
+  // --padding-xs: ;
+}
