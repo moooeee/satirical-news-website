@@ -7,16 +7,13 @@ function Nav() {
   const [shouldUseSticky, setShouldUseSticky] = useState(false)
 
   const navRef = useRef()
-  console.log("rendering")
 
   useEffect(() => {
     const listener = addEventListener("scroll", () => {
-      if (window.scrollY > 70) {
+      if (window.scrollY > 180) {
         setShouldUseSticky(true)
-      } else {
-        if (shouldUseSticky) {
-          setShouldUseSticky(false)
-        }
+      } else if (window.scrollY === 0 && shouldUseSticky) {
+        setShouldUseSticky(false)
       }
     })
 
